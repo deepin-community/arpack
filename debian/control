@@ -1,0 +1,130 @@
+Source: arpack
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Sylvestre Ledru <sylvestre@debian.org>
+Section: math
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               gfortran,
+               libblas-dev,
+               liblapack-dev,
+               mpi-default-dev,
+               libeigen3-dev
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/science-team/arpack
+Vcs-Git: https://salsa.debian.org/science-team/arpack.git
+Homepage: https://github.com/opencollab/arpack-ng
+
+Package: libarpack2
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Fortran77 subroutines to solve large scale eigenvalue problems
+ ARPACK software is capable of solving large scale symmetric,
+ nonsymmetric, and generalized eigenproblems from significant
+ application areas. The software is designed to compute a few (k)
+ eigenvalues with user specified features such as those of largest
+ real part or largest magnitude. Storage requirements are on the order
+ of n*k locations. No auxiliary storage is required. A set of Schur
+ basis vectors for the desired k-dimensional eigen-space is computed
+ which is numerically orthogonal to working precision. Numerically
+ accurate eigenvectors are available on request.
+ .
+ Important Features:
+ .
+  * Reverse Communication Interface.
+  * Single and Double Precision Real Arithmetic Versions for Symmetric,
+    Non-symmetric,
+  * Standard or Generalized Problems.
+  * Single and Double Precision Complex Arithmetic Versions for Standard or
+    Generalized Problems.
+  * Routines for Banded Matrices - Standard or Generalized Problems.
+  * Routines for The Singular Value Decomposition.
+  * Example driver routines that may be used as templates to implement
+    numerous Shift-Invert strategies for all problem types, data types and
+    precision.
+ .
+ This package contains the shared library.
+
+Package: libarpack2-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libarpack2 (= ${binary:Version}),
+         libblas-dev | libblas.so,
+         liblapack-dev | liblapack.so,
+         ${misc:Depends}
+Description: Fortran77 subroutines to solve large scale eigenvalue problems (development)
+ ARPACK software is capable of solving large scale symmetric,
+ nonsymmetric, and generalized eigenproblems from significant
+ application areas. The software is designed to compute a few (k)
+ eigenvalues with user specified features such as those of largest
+ real part or largest magnitude. Storage requirements are on the order
+ of n*k locations. No auxiliary storage is required. A set of Schur
+ basis vectors for the desired k-dimensional eigen-space is computed
+ which is numerically orthogonal to working precision. Numerically
+ accurate eigenvectors are available on request.
+ .
+ This package contains the static libraries and the documentation for
+ development with libarpack (including examples).
+
+Package: libparpack2
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Replaces: libarpack2
+Description: Parallel subroutines to solve large scale eigenvalue problems
+ ARPACK software is capable of solving large scale symmetric,
+ nonsymmetric, and generalized eigenproblems from significant
+ application areas. The software is designed to compute a few (k)
+ eigenvalues with user specified features such as those of largest
+ real part or largest magnitude. Storage requirements are on the order
+ of n*k locations. No auxiliary storage is required. A set of Schur
+ basis vectors for the desired k-dimensional eigen-space is computed
+ which is numerically orthogonal to working precision. Numerically
+ accurate eigenvectors are available on request.
+ .
+ Important Features:
+ .
+  * Reverse Communication Interface.
+  * Single and Double Precision Real Arithmetic Versions for Symmetric,
+    Non-symmetric,
+  * Standard or Generalized Problems.
+  * Single and Double Precision Complex Arithmetic Versions for Standard or
+    Generalized Problems.
+  * Routines for Banded Matrices - Standard or Generalized Problems.
+  * Routines for The Singular Value Decomposition.
+  * Example driver routines that may be used as templates to implement
+    numerous Shift-Invert strategies for all problem types, data types and
+    precision.
+ .
+ This package provides parpack: the MPI implementation of arpack.
+ .
+ This package contains the shared library.
+
+Package: libparpack2-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libparpack2 (= ${binary:Version}),
+         libblas-dev | libblas.so,
+         liblapack-dev | liblapack.so,
+         mpi-default-dev,
+         ${misc:Depends}
+Replaces: libarpack2-dev
+Description: Parallel subroutines to solve large scale eigenvalue problems (development)
+ ARPACK software is capable of solving large scale symmetric,
+ nonsymmetric, and generalized eigenproblems from significant
+ application areas. The software is designed to compute a few (k)
+ eigenvalues with user specified features such as those of largest
+ real part or largest magnitude. Storage requirements are on the order
+ of n*k locations. No auxiliary storage is required. A set of Schur
+ basis vectors for the desired k-dimensional eigen-space is computed
+ which is numerically orthogonal to working precision. Numerically
+ accurate eigenvectors are available on request.
+ .
+ This package contains the static libraries and the documentation for
+ development with libparpack (including examples).

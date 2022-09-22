@@ -1,0 +1,4 @@
+usr/lib/*/libarpack.a
+usr/lib/*/libarpack.so
+usr/lib/*/pkgconfig/arpack.pc
+usr/include/arpack/*.h*

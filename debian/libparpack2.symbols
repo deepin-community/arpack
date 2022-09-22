@@ -1,0 +1,98 @@
+libparpack.so.2 libparpack2 #MINVER#
+ cstatn_c@Base 3.7.0
+ dbgini_@Base 3.6.3
+ debug_@Base 2.1
+ debug_c@Base 3.7.0
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_argv_null_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_argvs_null_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_bottom_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_errcodes_ignore_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_in_place_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_status_ignore_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_statuses_ignore_@Base 3.1.2
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_unweighted_@Base 3.4.0
+ (arch=!mips !mipsel !mips64 !mips64el !s390 !s390x !powerpcspe !m68k !arm64 !hppa !ppc64 !sh4 !sparc64 !x32)mpi_fortran_weights_empty_@Base 3.4.0
+ pcgetv0_@Base 2.1
+ pclarnv_@Base 2.1
+ pcmout_@Base 2.1
+ pcnaitr_@Base 2.1
+ pcnapps_@Base 2.1
+ pcnaup2_@Base 2.1
+ pcnaupd_@Base 2.1
+ pcnaupd_c@Base 3.7.0
+ pcneigh_@Base 2.1
+ pcneupd_@Base 2.1
+ pcneupd_c@Base 3.7.0
+ pcngets_@Base 2.1
+ pcntxt_@Base 3.5.0+real
+ pcontext_@Base 3.5.0+real
+ pcvout_@Base 2.1
+ pdgetv0_@Base 2.1
+ pdlamch10_@Base 3.3.0
+ pdlarnv_@Base 2.1
+ pdmout_@Base 2.1
+ pdnaitr_@Base 2.1
+ pdnapps_@Base 2.1
+ pdnaup2_@Base 2.1
+ pdnaupd_@Base 2.1
+ pdnaupd_c@Base 3.7.0
+ pdneigh_@Base 2.1
+ pdneupd_@Base 2.1
+ pdneupd_c@Base 3.7.0
+ pdngets_@Base 2.1
+ pdnorm2_@Base 2.1
+ pdsaitr_@Base 2.1
+ pdsapps_@Base 2.1
+ pdsaup2_@Base 2.1
+ pdsaupd_@Base 2.1
+ pdsaupd_c@Base 3.7.0
+ pdseigt_@Base 2.1
+ pdseupd_@Base 2.1
+ pdseupd_c@Base 3.7.0
+ pdsgets_@Base 2.1
+ pdvout_@Base 2.1
+ pdznorm2_@Base 2.1
+ pivout_@Base 2.1
+ pscnorm2_@Base 2.1
+ psgetv0_@Base 2.1
+ pslamch10_@Base 3.6.0
+ pslarnv_@Base 2.1
+ psmout_@Base 2.1
+ psnaitr_@Base 2.1
+ psnapps_@Base 2.1
+ psnaup2_@Base 2.1
+ psnaupd_@Base 2.1
+ psnaupd_c@Base 3.7.0
+ psneigh_@Base 2.1
+ psneupd_@Base 2.1
+ psneupd_c@Base 3.7.0
+ psngets_@Base 2.1
+ psnorm2_@Base 2.1
+ pssaitr_@Base 2.1
+ pssapps_@Base 2.1
+ pssaup2_@Base 2.1
+ pssaupd_@Base 2.1
+ pssaupd_c@Base 3.7.0
+ psseigt_@Base 2.1
+ psseupd_@Base 2.1
+ psseupd_c@Base 3.7.0
+ pssgets_@Base 2.1
+ psvout_@Base 2.1
+ pzgetv0_@Base 2.1
+ pzlarnv_@Base 2.1
+ pzmout_@Base 2.1
+ pznaitr_@Base 2.1
+ pznapps_@Base 2.1
+ pznaup2_@Base 2.1
+ pznaupd_@Base 2.1
+ pznaupd_c@Base 3.7.0
+ pzneigh_@Base 2.1
+ pzneupd_@Base 2.1
+ pzneupd_c@Base 3.7.0
+ pzngets_@Base 2.1
+ pzvout_@Base 2.1
+ sstatn_c@Base 3.7.0
+ sstats_c@Base 3.7.0
+ staini_@Base 3.6.3
+ stat_c@Base 3.7.0
+ timing_@Base 2.1

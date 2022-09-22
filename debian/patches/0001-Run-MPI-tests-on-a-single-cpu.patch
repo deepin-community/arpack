@@ -1,0 +1,41 @@
+From: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Date: Thu, 25 Apr 2019 00:29:01 +0200
+Subject: Run MPI tests on a single cpu
+
+---
+ PARPACK/EXAMPLES/MPI/Makefile.am | 4 ++--
+ PARPACK/TESTS/MPI/Makefile.am    | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/PARPACK/EXAMPLES/MPI/Makefile.am b/PARPACK/EXAMPLES/MPI/Makefile.am
+index 66ccaf7..65d7fb3 100644
+--- a/PARPACK/EXAMPLES/MPI/Makefile.am
++++ b/PARPACK/EXAMPLES/MPI/Makefile.am
+@@ -10,9 +10,9 @@ ZNDRV = pzndrv1
+ 
+ check_PROGRAMS = $(SNDRV) $(DNDRV) $(SSDRV) $(DSDRV) $(CNDRV) $(ZNDRV)
+ 
+-# Run MPI tests with "mpirun -n 2"
++# Run MPI tests with "mpirun -n 1"
+ LOG_COMPILER = mpirun
+-LOG_FLAGS = -n 2
++LOG_FLAGS = -n 1
+ 
+ TESTS = $(check_PROGRAMS)
+ 
+diff --git a/PARPACK/TESTS/MPI/Makefile.am b/PARPACK/TESTS/MPI/Makefile.am
+index 862a4c1..26ee9a6 100644
+--- a/PARPACK/TESTS/MPI/Makefile.am
++++ b/PARPACK/TESTS/MPI/Makefile.am
+@@ -1,9 +1,9 @@
+ F77 = $(MPIF77)
+ LDADD = $(top_builddir)/PARPACK/SRC/MPI/libparpack$(LIBSUFFIX).la $(LAPACK_LIBS) $(BLAS_LIBS)
+ 
+-# Run MPI tests with "mpirun -n 2"
++# Run MPI tests with "mpirun -n 1"
+ LOG_COMPILER = mpirun
+-LOG_FLAGS = -n 2
++LOG_FLAGS = -n 1
+ 
+ SISS = issue46
+ 
